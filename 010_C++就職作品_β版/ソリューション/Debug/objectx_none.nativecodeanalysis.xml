@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>objectx_none.h</FILENAME>
+      <LINE>63</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CObjectXNone::MODEL' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CObjectXNone::GetModel</FUNCTION>
+    <DECORATED>?GetModel@CObjectXNone@@QAEHXZ</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>manager.h</FILENAME>
+      <LINE>68</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CScene::MODE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CScene::SetMode</FUNCTION>
+    <DECORATED>?SetMode@CScene@@QAEXW4MODE@1@@Z</DECORATED>
+    <FUNCLINE>68</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -1,0 +1,344 @@
+
+//-===============================================
+//-
+//-	2Dエフェクトの処理[effect2d.cpp]
+//- Author Sakai Minato
+//-
+//-===============================================
+
+//-======================================
+//-	インクルード
+//-======================================
+
+#include "effect_2d.h"
+
+#include "renderer.h"
+#include "manager.h"
+
+#include "manager_texture.h"
+#include "time_stop.h"
+
+//-======================================
+//-	マクロ定義
+//-======================================
+
+//=======================================
+//= コンスト定義
+//=======================================
+
+// エフェクトテクスチャのコンスト定義
+const char *pTextureEffect2d[] =
+{
+	"data\\TEXTURE\\effect000.jpg"	// 通常エフェクト_000のテクスチャ
+};
+
+//-======================================
+//-	静的変数宣言
+//-======================================
+
+int CEffect2d::m_nTextureNldx[TEX_MAX] = {};	// テクスチャ
+
+//-------------------------------------
+//-	エフェクトのコンストラクタ
+//-------------------------------------
+CEffect2d::CEffect2d(int nPriority) : CObject2d(nPriority)
+{
+}
+
+//-------------------------------------
+//-	エフェクトのデストラクタ
+//-------------------------------------
+CEffect2d::~CEffect2d()
+{
+
+}
+
+//-------------------------------------
+//- エフェクトのテクスチャの読み込み
+//-------------------------------------
+HRESULT CEffect2d::Load(void)
+{
+	// デバイスを取得
+	LPDIRECT3DDEVICE9 pDevice = CManager::GetRenderer()->GetDevice();
+
+	// デバイスの情報取得の成功を判定
+	if (pDevice == NULL)
+	{// 失敗時
+
+	 // 初期化処理を抜ける
+		return E_FAIL;
+	}
+
+	// テクスチャ管理の生成
+	CManagerTexture *pManagerTexture = CManager::GetManagerTexture();
+
+	// テクスチャ管理の有無を判定
+	if (pManagerTexture == NULL)
+	{
+		// 初期化処理を抜ける
+		return E_FAIL;
+	}
+
+	// テクスチャ設定
+	for (int nCount = 0; nCount < TEX_MAX; nCount++)
+	{
+		// テクスチャ番号の取得（テクスチャの割当）
+		m_nTextureNldx[nCount] = pManagerTexture->Regist(pTextureEffect2d[nCount]);
+
+		// テクスチャの読み込み成功の有無を確認
+		if (m_nTextureNldx[nCount] == -1)
+		{
+			// 失敗時に初期化処理を抜ける
+			return E_FAIL;
+		}
+	}
+
+	// 成功を返す
+	return S_OK;
+}
+
+//-------------------------------------
+//- エフェクトの読み込んだテクスチャの破棄
+//-------------------------------------
+void CEffect2d::Unload(void)
+{
+
+}
+
+//-------------------------------------
+//- エフェクトの初期化処理
+//-------------------------------------
+HRESULT CEffect2d::Init(TEX tex)
+{
+	// テクスチャ割当
+	BindTexture(m_nTextureNldx[tex]);
+
+	// ビルボードオブジェクトの初期化
+	CObject2d::Init();
+
+	// 情報を保持する
+	m_dataSizeHold.Set(m_dataSize.Get());
+	m_dataColorHold.Set(m_dataColor.Get());
+
+	// 成功を返す
+	return S_OK;
+}
+
+//-------------------------------------
+//- エフェクトの終了処理
+//-------------------------------------
+void CEffect2d::Uninit(void)
+{
+	// ビルボードオブジェクトの終了
+	CObject2d::Uninit();
+}
+
+//-------------------------------------
+//- エフェクトの更新処理
+//-------------------------------------
+void CEffect2d::Update(void)
+{
+	// エフェクトの加算処理
+	Add();
+
+	// エフェクトの減少処理
+	if (Sub() == true)
+	{
+		return;
+	}
+
+	// ビルボードオブジェクトの更新処理
+	CObject2d::Update();
+}
+
+//-------------------------------------
+//- エフェクトの描画処理
+//-------------------------------------
+void CEffect2d::Draw(void)
+{
+	// デバイスを取得
+	CRenderer *pRenderer = CManager::GetRenderer();
+
+	// デバイスの情報取得の成功を判定
+	if (pRenderer == NULL)
+	{// 失敗時
+
+	 // 初期化処理を抜ける
+		return;
+	}
+
+	// 変数宣言（情報取得）
+	bool bZTestOff = m_bDataZTestOff.Get();	// Zテストの有無
+
+											// アルファブレディングの設定
+	pRenderer->SetAlphaBlend(true);
+
+	// アルファテストの設定
+	pRenderer->SetAlphaTest(true);
+
+	if (bZTestOff == false)
+	{
+		// Zテストの設定
+		pRenderer->SetZTest(true);
+	}
+
+	// エフェクトの描画処理
+	CObject2d::Draw();
+
+	if (bZTestOff == false)
+	{
+		// Zテストの解除
+		pRenderer->SetZTest(false);
+	}
+
+	// アルファブレディングの解除
+	pRenderer->SetAlphaBlend(false);
+
+	// アルファテストの解除
+	pRenderer->SetAlphaTest(false);
+}
+
+//-------------------------------------
+//- エフェクトの減少処理
+//-------------------------------------
+void CEffect2d::Set(D3DXVECTOR3 pos, D3DXVECTOR3 size, D3DXVECTOR3 move, D3DXCOLOR color, int nLife, bool bZTest)
+{
+	// 情報設定
+	m_dataPos.Set(pos);				// 位置
+	m_dataSize.Set(size);			// 大きさ
+	m_dataMove.Set(move);			// 移動量
+	m_dataColor.Set(color);			// 色
+	m_nDataLife.Set(nLife);			// 寿命
+	m_bDataZTestOff.Set(bZTest);	// Zテストの有無
+}
+
+//-------------------------------------
+//- エフェクトの生成処理
+//-------------------------------------
+CEffect2d *CEffect2d::Create(TEX tex)
+{
+	// エフェクトのポインタを宣言
+	CEffect2d *pCEffect2d = DBG_NEW CEffect2d(7);
+
+	// 生成の成功の有無を判定
+	if (pCEffect2d != NULL)
+	{
+		// 初期化処理
+		if (FAILED(pCEffect2d->Init(tex)))
+		{// 失敗時
+
+		 // 「なし」を返す
+			return NULL;
+		}
+	}
+	else if (pCEffect2d == NULL)
+	{// 失敗時
+
+	 // 「なし」を返す
+		return NULL;
+	}
+
+	// 種類を設定
+	pCEffect2d->SetType(TYPE_EFFECT);
+
+	// エフェクトのポインタを返す
+	return pCEffect2d;
+}
+
+//-------------------------------------
+//- エフェクトの加算処理
+//-------------------------------------
+void CEffect2d::Add(void)
+{
+	// 時間管理の情報を取得
+	CTimeStop *pManagerTime = CManager::GetManagerTime();
+
+	// 時間管理取得の有無を判定
+	if (pManagerTime == NULL)
+	{
+		// 処理を抜ける
+		return;
+	}
+
+	// 変数宣言（情報取得）
+	D3DXVECTOR3 pos = m_dataPos.Get();		// 位置
+	D3DXVECTOR3 move = m_dataMove.Get();	// 移動量
+
+	// 時間倍率の計算
+	D3DXVECTOR3 moveTime = pManagerTime->CalRate(move);
+
+	// 位置を更新
+	pos += moveTime;
+
+	// 位置の反映
+	m_dataPos.Set(pos);
+	m_dataMove.Set(move);
+}
+
+//-------------------------------------
+//- エフェクトの減少処理
+//-------------------------------------
+bool CEffect2d::Sub(void)
+{
+	// 時間管理の情報を取得
+	CTimeStop *pManagerTime = CManager::GetManagerTime();
+
+	// 時間管理取得の有無を判定
+	if (pManagerTime == NULL)
+	{
+		// 処理を抜ける
+		return false;
+	}
+
+	// 変数を宣言（情報取得）
+	D3DXVECTOR3 size = m_dataSize.Get();			// 大きさ
+	D3DXVECTOR3 sizeHold = m_dataSizeHold.Get();	// 保持する大きさ
+	D3DXCOLOR color = m_dataColor.Get();			// 色
+	D3DXCOLOR colorHold = m_dataColorHold.Get();	// 保持する色
+	int nLife = m_nDataLife.Get();					// 体力
+
+	// 時間倍率の計算（サイズの減少量算出）
+	float nTimeEffectSizeX = pManagerTime->CalRate(sizeHold.x / nLife);
+	float nTimeEffectSizeY = pManagerTime->CalRate(sizeHold.y / nLife);
+
+	// 大きさを減らす
+	size.x -= nTimeEffectSizeX;
+	size.y -= nTimeEffectSizeY;
+
+	// 時間倍率の計算（色の減少量算出）
+	float nTimeEffectColorA = pManagerTime->CalRate(colorHold.a / nLife);
+
+	// 色のα値を減少
+	color.a -= nTimeEffectColorA;
+
+	// 整数カウントの有無を判定
+	if (pManagerTime->m_bDataIntCount.Get() == true)
+	{
+		// 保持する情報を更新
+		sizeHold = size;
+		colorHold = color;
+
+		// 体力を減らす
+		nLife--;
+	}
+
+	// 体力の判定
+	if (nLife <= 0)
+	{
+		// 終了処理
+		Uninit();
+
+		// 成功を返す
+		return true;
+	}
+
+	// 情報更新
+	m_dataSize.Set(size);			// 大きさ
+	m_dataSizeHold.Set(sizeHold);	// 保持する大きさ
+	m_dataColor.Set(color);			// 色
+	m_dataColorHold.Set(colorHold);	// 保持する色
+	m_nDataLife.Set(nLife);			// 体力
+
+									// 失敗を返す
+	return false;
+}

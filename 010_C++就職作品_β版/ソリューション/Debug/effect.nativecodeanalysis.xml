@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>manager.h</FILENAME>
+      <LINE>68</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CScene::MODE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CScene::SetMode</FUNCTION>
+    <DECORATED>?SetMode@CScene@@QAEXW4MODE@1@@Z</DECORATED>
+    <FUNCLINE>68</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>effect.h</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>変数 'CEffect::Data::bIsZTestStop' が初期化されていません。メンバー変数は必ず初期化してください (type.6)。</DESCRIPTION>
+    <FUNCTION>CEffect::Data::{ctor}</FUNCTION>
+    <DECORATED>??0Data@CEffect@@QAE@XZ</DECORATED>
+    <FUNCLINE>47</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CEffect::Data::bIsZTestStop</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>effect.h</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>変数 'CEffect::Data::nLife' が初期化されていません。メンバー変数は必ず初期化してください (type.6)。</DESCRIPTION>
+    <FUNCTION>CEffect::Data::{ctor}</FUNCTION>
+    <DECORATED>??0Data@CEffect@@QAE@XZ</DECORATED>
+    <FUNCLINE>47</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CEffect::Data::nLife</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>effect.cpp</FILENAME>
+      <LINE>111</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CEffect::TEX' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CEffect::Init</FUNCTION>
+    <DECORATED>?Init@CEffect@@QAEJW4TEX@1@@Z</DECORATED>
+    <FUNCLINE>111</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -1,0 +1,47 @@
+﻿  precompile.cpp
+  camera.cpp
+  data.cpp
+  debugproc.cpp
+  edit_map.cpp
+  enemy.cpp
+  enemy_pin.cpp
+  enemy_normal.cpp
+  event_object.cpp
+  field.cpp
+  file_emy_nor.cpp
+  file_enemy_pin.cpp
+  file_evt_obj.cpp
+  file_garbage.cpp
+  file_garbage_collect.cpp
+  file_item.cpp
+  file_obj_none.cpp
+  garbage.cpp
+  garbage_collect.cpp
+  Input.cpp
+  item.cpp
+  コンパイル中...
+  light.cpp
+  main.cpp
+  manager.cpp
+  manager_model.cpp
+  manager_object.cpp
+  manager_texture.cpp
+  manager_time.cpp
+  number.cpp
+  object.cpp
+  object2d.cpp
+  object3d.cpp
+  objectx_none.cpp
+  objectx_test.cpp
+  object_anima.cpp
+  object_billboard.cpp
+  object_model.cpp
+  object_x.cpp
+  renderer.cpp
+  score.cpp
+  sound.cpp
+  コード生成しています。
+  All 388 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  コード生成が終了しました。
+  C++_EditMap.vcxproj -> C:\Users\student\Desktop\ゼニセンシ\ZeniSensi-sln-\ツール\マップエディタ\C++_EditMap\C++_EditMap.exe
+  C++_EditMap.vcxproj -> C:\Users\student\Desktop\ゼニセンシ\ZeniSensi-sln-\ツール\マップエディタ\C++_EditMap\C++_EditMap.pdb (Full PDB)

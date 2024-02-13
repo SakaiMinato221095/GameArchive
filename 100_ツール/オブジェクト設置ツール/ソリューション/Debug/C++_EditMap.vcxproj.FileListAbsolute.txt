@@ -1,0 +1,2 @@
+C:\Users\student\Desktop\ゲーム制作\ゼニセンシ\ZeniSensi-sln-\ツール\マップエディタ\C++_EditMap\Debug\C++_EditMap.exe
+C:\Users\student\Desktop\新しいフォルダー (3)\GameArchive\100_ツール\オブジェクト設置ツール\ソリューション\Debug\C++_EditMap.exe

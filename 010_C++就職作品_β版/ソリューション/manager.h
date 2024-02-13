@@ -1,0 +1,134 @@
+
+//-===============================================
+//-
+//-	管理処理のヘッダー[manager.h]
+//- Author Sakai Minato
+//-
+//-===============================================
+
+//-======================================
+//-	二重インクルード防止
+//-======================================
+
+#ifndef _MANAGER_H_		// このマクロが定義されなかったら
+#define _MANAGER_H_		// 二重インクルード帽子のマクロを定義
+
+//-======================================
+//-	インクルード
+//-======================================
+
+//-======================================
+//-	前方宣言
+//-======================================
+
+class CRenderer;
+class CInputKeyboard;
+class CXInput;
+class CSound;
+class CDebugProc;
+
+class CFade;
+
+class CManagerTexture;
+class CManagerModel;
+
+class CCamera;
+class CLight;
+
+class CMgrColl;
+
+//-======================================
+//-	クラス定義
+//-======================================
+
+// シーンクラス
+class CScene
+{
+public:
+
+	typedef enum
+	{
+		MODE_TITEL = 0,	// タイトル
+		MODE_GAME,		// ゲーム
+		MODE_RESULT,	// リザルト
+		MODE_MAX
+	}MODE;
+
+	CScene();
+
+	virtual ~CScene();
+
+	virtual HRESULT Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow);
+	virtual void Uninit(void);
+	virtual void Update(void);
+	virtual void Draw(void);
+
+	static CScene *Create(MODE mode,HINSTANCE hInstance = NULL, HWND hWnd = 0, BOOL bWindow = true);
+
+	void SetMode(MODE mode) { m_mode = mode; }
+	MODE GetMode(void) { return m_mode; }
+
+private:
+
+	MODE m_mode;	// モードの情報
+};
+
+// マネージャークラス
+class CManager
+{
+
+public:
+
+	CManager();
+	~CManager();
+
+	HRESULT Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow);
+	void Uninit(void);
+	void Update(void);
+	void Draw(void);
+	
+	void SetMode(CScene::MODE mode);
+	CScene::MODE GetMode(void);
+
+	CFade* GetFade(void) { return m_pFade; }
+
+	CRenderer* GetRenderer(void) { return m_pRenderer; }
+	CInputKeyboard* GetInputKeyboard(void) { return m_pInputKeyboard; }
+	CXInput* GetXInput(void) { return m_pXInput; }
+	CSound* GetSound(void) { return m_pSound; }
+	CDebugProc* GetDbugProc(void) { return m_pDbugProc; }
+
+	CManagerTexture* GetManagerTexture(void) { return m_pManagerTexture; }
+	CManagerModel *GetManagerModel(void) { return m_pManagerModel; }
+
+	CCamera* GetCamera(void) { return m_pCamera; }
+	CLight* GetLight(void) { return m_pLight; }
+
+	CMgrColl* GetMgrColl(void) { return m_pMgrColl; }
+
+	static CManager *GetInstance();
+private:
+
+	void Debug(void);
+
+	CScene *m_pScene;					// シーンのポインタ
+	CFade *m_pFade;						// フェードのポインタ
+
+	CRenderer *m_pRenderer;				// レンダラーのポインタ
+	CInputKeyboard *m_pInputKeyboard;	// キーボードのポインタ
+	CXInput *m_pXInput;					// X入力のポインタ
+	CSound *m_pSound;					// サウンドのポインタ
+	CDebugProc *m_pDbugProc;			// デバックのポインタ
+
+	CManagerTexture *m_pManagerTexture;	// テクスチャ管理のポインタ
+	CManagerModel *m_pManagerModel;		// モデル管理のポインタ
+
+	CCamera *m_pCamera;					// カメラのポインタ
+	CLight *m_pLight;					// ライトのポインタ
+
+	CMgrColl *m_pMgrColl;				// 当たり判定管理のポインタ
+
+	static CManager *m_pManager;		// 自身のポインタ
+};
+
+#endif	// 二重インクルード防止の終了

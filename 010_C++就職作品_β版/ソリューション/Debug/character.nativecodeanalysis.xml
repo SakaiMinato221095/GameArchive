@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>model.h</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CModel::MODEL_TYPE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CModel::GetPartsNum</FUNCTION>
+    <DECORATED>?GetPartsNum@CModel@@SAHW4MODEL_TYPE@1@@Z</DECORATED>
+    <FUNCLINE>101</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>motion.h</FILENAME>
+      <LINE>105</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>関数はスタックの '24716' バイトを使用します: /analyze:stacksize '16384' を超えています。 データの一部をヒープに移動することを考慮してください。</DESCRIPTION>
+    <FUNCTION>CMotion::SetInfo</FUNCTION>
+    <DECORATED>?SetInfo@CMotion@@QAEXUInfo@1@@Z</DECORATED>
+    <FUNCLINE>105</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>manager.h</FILENAME>
+      <LINE>68</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CScene::MODE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CScene::SetMode</FUNCTION>
+    <DECORATED>?SetMode@CScene@@QAEXW4MODE@1@@Z</DECORATED>
+    <FUNCLINE>68</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>coll.h</FILENAME>
+      <LINE>104</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>関数はスタックの '16460' バイトを使用します: /analyze:stacksize '16384' を超えています。 データの一部をヒープに移動することを考慮してください。</DESCRIPTION>
+    <FUNCTION>CColl::SetData</FUNCTION>
+    <DECORATED>?SetData@CColl@@QAEXUData@1@@Z</DECORATED>
+    <FUNCLINE>104</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>attack.h</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CMgrColl::TAG' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CAttack::SetTagTgt</FUNCTION>
+    <DECORATED>?SetTagTgt@CAttack@@QAEXW4TAG@CMgrColl@@@Z</DECORATED>
+    <FUNCLINE>85</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>character.cpp</FILENAME>
+      <LINE>82</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CMotion::MOTION_TYPE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CCharacter::Init</FUNCTION>
+    <DECORATED>?Init@CCharacter@@QAEJW4MODEL_TYPE@CModel@@W4MOTION_TYPE@CMotion@@H@Z</DECORATED>
+    <FUNCLINE>82</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

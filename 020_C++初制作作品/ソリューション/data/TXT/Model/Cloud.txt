@@ -1,0 +1,94 @@
+#==============================================================================
+#
+# 『モーションビューワ』スクリプトファイル [motion.txt]
+# Author : AKIRA TANAKA
+#
+#==============================================================================
+SCRIPT			# この行は絶対消さないこと！
+
+#------------------------------------------------------------------------------
+# モデル数
+#------------------------------------------------------------------------------
+NUM_MODEL = 8
+
+#------------------------------------------------------------------------------
+# モデルファイル名
+#------------------------------------------------------------------------------
+MODEL_FILENAME = data/MODEL/cloud/body.x		# [0]体
+MODEL_FILENAME = data/MODEL/cloud/neck.x		# [1]首
+MODEL_FILENAME = data/MODEL/cloud/head.x		# [2]頭
+MODEL_FILENAME = data/MODEL/cloud/arm_R.x		# [3]右腕
+MODEL_FILENAME = data/MODEL/cloud/arm_L.x		# [4]左腕
+MODEL_FILENAME = data/MODEL/cloud/leg_R.x		# [5]右脚
+MODEL_FILENAME = data/MODEL/cloud/leg_L.x		# [6]左脚
+MODEL_FILENAME = data/MODEL/cloud/Gun.x			# [7]銃
+
+#------------------------------------------------------------------------------
+# キャラクター情報
+#------------------------------------------------------------------------------
+CHARACTERSET
+	MOVE = 3.2						# 移動量
+	JUMP = 11.25					# ジャンプ量
+	RADIUS = 20.0					# 半径
+	HEIGHT = 40.0					# 高さ
+	NUM_PARTS = 8					# パーツ数
+
+	PARTSSET						# [0]体
+		INDEX = 0
+		PARENT = -1					# (親)NULL
+		POS = 0.0 35.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [1]首
+		INDEX = 1
+		PARENT = 0					# (親)体
+		POS = 0.0 15.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [2]頭
+		INDEX = 2
+		PARENT = 1					# (親)首
+		POS = 0.0 -3.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [3]右腕
+		INDEX = 3
+		PARENT = 0					# (親)体
+		POS = 10.0 7.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [4]左腕
+		INDEX = 4
+		PARENT = 0					# (親)右袖
+		POS = -10.0 7.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+
+	PARTSSET						# [5]右足
+		INDEX = 5
+		PARENT = 0					# (親)左袖
+		POS = 4.0 -5.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [6]左足
+		INDEX = 6
+		PARENT = 0					# (親)体
+		POS = -4.0 -5.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [7]銃
+		INDEX = 7
+		PARENT = 4					# (親)右手
+		POS = -23.0 2.0 0.0
+		ROT = 0.0 1.6 0.0
+	END_PARTSSET
+	
+END_CHARACTERSET
+
+END_SCRIPT		# この行は絶対消さないこと！

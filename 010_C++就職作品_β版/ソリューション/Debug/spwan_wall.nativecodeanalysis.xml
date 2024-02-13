@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>phase_manager.h</FILENAME>
+      <LINE>72</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CPhaseManager::TYPE_PHASE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CPhaseManager::GetTypePhase</FUNCTION>
+    <DECORATED>?GetTypePhase@CPhaseManager@@QAE?AW4TYPE_PHASE@1@XZ</DECORATED>
+    <FUNCLINE>72</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>manager.h</FILENAME>
+      <LINE>68</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CScene::MODE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CScene::SetMode</FUNCTION>
+    <DECORATED>?SetMode@CScene@@QAEXW4MODE@1@@Z</DECORATED>
+    <FUNCLINE>68</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>coll.h</FILENAME>
+      <LINE>104</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>関数はスタックの '16460' バイトを使用します: /analyze:stacksize '16384' を超えています。 データの一部をヒープに移動することを考慮してください。</DESCRIPTION>
+    <FUNCTION>CColl::SetData</FUNCTION>
+    <DECORATED>?SetData@CColl@@QAEXUData@1@@Z</DECORATED>
+    <FUNCLINE>104</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>model.h</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CModel::MODEL_TYPE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CModel::GetPartsNum</FUNCTION>
+    <DECORATED>?GetPartsNum@CModel@@SAHW4MODEL_TYPE@1@@Z</DECORATED>
+    <FUNCLINE>101</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>motion.h</FILENAME>
+      <LINE>105</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>関数はスタックの '24716' バイトを使用します: /analyze:stacksize '16384' を超えています。 データの一部をヒープに移動することを考慮してください。</DESCRIPTION>
+    <FUNCTION>CMotion::SetInfo</FUNCTION>
+    <DECORATED>?SetInfo@CMotion@@QAEXUInfo@1@@Z</DECORATED>
+    <FUNCLINE>105</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>spwan_wall.h</FILENAME>
+      <LINE>110</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>変数 'CSpwanWall::Info::nNumTarget' が初期化されていません。メンバー変数は必ず初期化してください (type.6)。</DESCRIPTION>
+    <FUNCTION>CSpwanWall::Info::{ctor}</FUNCTION>
+    <DECORATED>??0Info@CSpwanWall@@QAE@XZ</DECORATED>
+    <FUNCLINE>110</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CSpwanWall::Info::nNumTarget</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>spwan_wall.h</FILENAME>
+      <LINE>110</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>変数 'CSpwanWall::Info::typePhase' が初期化されていません。メンバー変数は必ず初期化してください (type.6)。</DESCRIPTION>
+    <FUNCTION>CSpwanWall::Info::{ctor}</FUNCTION>
+    <DECORATED>??0Info@CSpwanWall@@QAE@XZ</DECORATED>
+    <FUNCLINE>110</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CSpwanWall::Info::typePhase</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>spwan_wall.cpp</FILENAME>
+      <LINE>264</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>関数はスタックの '16464' バイトを使用します: /analyze:stacksize '16384' を超えています。 データの一部をヒープに移動することを考慮してください。</DESCRIPTION>
+    <FUNCTION>CSpwanWall::UpdateType</FUNCTION>
+    <DECORATED>?UpdateType@CSpwanWall@@AAEXXZ</DECORATED>
+    <FUNCLINE>264</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -1,0 +1,86 @@
+#====================================================================
+# モデル数
+#====================================================================
+NUM_MODEL = 10
+
+#====================================================================
+# モデルファイル名
+#====================================================================
+MODEL_FILENAME = data/MODEL/Murabito/body.x
+MODEL_FILENAME = data/MODEL/Murabito/head.x
+MODEL_FILENAME = data/MODEL/Murabito/sleeve_R.x
+MODEL_FILENAME = data/MODEL/Murabito/hand_R.x
+MODEL_FILENAME = data/MODEL/Murabito/sleeve_L.x
+MODEL_FILENAME = data/MODEL/Murabito/hand_L.x
+MODEL_FILENAME = data/MODEL/Murabito/pants_R.x
+MODEL_FILENAME = data/MODEL/Murabito/leg_R.x
+MODEL_FILENAME = data/MODEL/Murabito/pants_L.x
+MODEL_FILENAME = data/MODEL/Murabito/leg_L.x
+
+#====================================================================
+# キャラクター情報
+#====================================================================
+CHARACTERSET
+    NUM_PARTS = 10
+
+    PARTSSET
+        INDEX = 0
+        PARENT = -1
+        POS = 0.0 64.4 2.1
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 1
+        PARENT = 0
+        POS = 0.0 25.0 0.0
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 2
+        PARENT = 0
+        POS = 10.6 16.0 0.1
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 3
+        PARENT = 2
+        POS = 16.3 0.5 -0.4
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 4
+        PARENT = 0
+        POS = -10.5 16.0 -0.3
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 5
+        PARENT = 4
+        POS = -16.5 1.3 -0.1
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 6
+        PARENT = 0
+        POS = 7.5 -18.6 -6.3
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 7
+        PARENT = 6
+        POS = -0.1 -15.0 -2.3
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 8
+        PARENT = 0
+        POS = -8.5 -19.5 -4.4
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+    PARTSSET
+        INDEX = 9
+        PARENT = 8
+        POS = -0.2 -14.5 -1.9
+        ROT = 0.0 0.0 0.0
+    END_PARTSSET
+END_CHARACTERSET

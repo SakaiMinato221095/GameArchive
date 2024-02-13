@@ -1,0 +1,156 @@
+#==============================================================================
+#=
+#= [効果なしオブジェクト情報] 
+#=
+#==============================================================================
+
+#==============================================================================
+#= [モデル数] 
+#==============================================================================
+0
+
+#==============================================================================
+#= [モデル情報] 
+#==============================================================================
+
+MODEL_NUMBER = 0
+ --- SIZE = 359.0 295.0 204.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 1
+ --- SIZE = 350.0 481.0 219.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 2
+ --- SIZE = 560.0 460.0 297.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 3
+ --- SIZE = 284.0 268.0 129.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 4
+ --- SIZE = 215.0 268.0 180.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 5
+ --- SIZE = 329.0 268.0 252.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 6
+ --- SIZE = 281.0 268.0 228.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 7
+ --- SIZE = 362.0 457.0 204.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 8
+ --- SIZE = 161.0 79.0 147.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 9
+ --- SIZE = 569.0 367.0 180.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 10
+ --- SIZE = 71.0 106.0 93.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 11
+ --- SIZE = 29.0 106.0 30.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 12
+ --- SIZE = 104.0 106.0 57.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 13
+ --- SIZE = 26.0 205.0 18.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 14
+ --- SIZE = 0.0 0.0 0.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 15
+ --- SIZE = 278.0 220.0 84.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 16
+ --- SIZE = 314.0 622.0 279.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 17
+ --- SIZE = 347.0 397.0 294.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 18
+ --- SIZE = 257.0 397.0 243.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 19
+ --- SIZE = 203.0 106.0 108.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 20
+ --- SIZE = 185.0 352.0 432.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 21
+ --- SIZE = 320.0 70.0 387.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 22
+ --- SIZE = 362.0 85.0 291.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 23
+ --- SIZE = 116.0 85.0 141.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 24
+ --- SIZE = 131.0 85.0 165.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 25
+ --- SIZE = 251.0 85.0 159.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 26
+ --- SIZE = 152.0 55.0 198.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 27
+ --- SIZE = 173.0 55.0 204.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 28
+ --- SIZE = 50.0 55.0 21.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 29
+ --- SIZE = 0.0 0.0 0.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 30
+ --- SIZE = 0.0 0.0 0.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 31
+ --- SIZE = 41.0 55.0 24.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 32
+ --- SIZE = -0.0 0.0 0.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 33
+ --- SIZE = 35.0 55.0 30.0 
+END_MODEL_DATA_SET 
+
+MODEL_NUMBER = 34
+ --- SIZE = 407.0 55.0 816.0 
+END_MODEL_DATA_SET 
+
+SET_END

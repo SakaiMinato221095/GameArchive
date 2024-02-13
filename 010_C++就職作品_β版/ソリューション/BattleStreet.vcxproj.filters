@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{e74660d2-64d8-4c72-9411-0e11368ec05e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{c7db45fd-0944-47e1-b4a0-0e0918205861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{93cf51ad-cbe2-4184-bced-64c8eeb70ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{8b9bbcc2-2614-4655-8f11-071db1e3d8f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{67ccb53d-3301-4f57-a904-c57d17206a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attack">
+      <UniqueIdentifier>{a3cffa33-d0de-4f23-b9bf-b77e5972f738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{733fcb27-9970-40e4-9975-856652c6b89a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{d8684553-66ee-42ab-ac83-68358fea487f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Obj3d">
+      <UniqueIdentifier>{8d16c59e-d1ec-4708-9187-debda491f038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{a98f5520-be31-47ae-829e-27d9340cfe73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjX">
+      <UniqueIdentifier>{5b479fc8-dbdb-4fcf-88cd-59af181536db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attack\Finish">
+      <UniqueIdentifier>{2a901ad8-2c02-4283-b710-f179a932ee78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui">
+      <UniqueIdentifier>{8dc67e90-3159-42d0-b1be-6f76320e7229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Obj2d">
+      <UniqueIdentifier>{d56ef7ca-f041-4818-ad3f-2bbba003330c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{a55c4a1e-721b-4444-b6f8-aa2d6a21e33e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{c15e32dc-ecd7-4986-8321-28c0a4aa26be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Template">
+      <UniqueIdentifier>{1a67f52d-dcd8-434d-b6db-4412b2e282af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{9efbb211-f816-4443-aeec-2149754a366c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spwan">
+      <UniqueIdentifier>{17145f92-55c3-4cfd-b225-3632d03ac32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Phase">
+      <UniqueIdentifier>{1ece65c6-ec8d-4ff2-854a-44c1f6ab732b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjBillboard">
+      <UniqueIdentifier>{3dc29f29-59c1-45dd-92f7-f106a30aa68e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debugproc.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="fade.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="number.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="objectx_none.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="precompile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="skybox.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="bg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="coll.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="mgr_coll.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="xinput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="attack.cpp">
+      <Filter>Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="effect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="particle.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="command.cpp">
+      <Filter>Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="manager_texture.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="manager_model.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="map_manager.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="map_object_x.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="obj_3d_wall.cpp">
+      <Filter>Obj3d</Filter>
+    </ClCompile>
+    <ClCompile Include="box_wall.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="box_field.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="obj_3d_field.cpp">
+      <Filter>Obj3d</Filter>
+    </ClCompile>
+    <ClCompile Include="object3d.cpp">
+      <Filter>Obj3d</Filter>
+    </ClCompile>
+    <ClCompile Include="helper_sakai.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy_boss.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="object_x.cpp">
+      <Filter>ObjX</Filter>
+    </ClCompile>
+    <ClCompile Include="motion.cpp">
+      <Filter>ObjX</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>ObjX</Filter>
+    </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>ObjX</Filter>
+    </ClCompile>
+    <ClCompile Include="finish_punch.cpp">
+      <Filter>Attack\Finish</Filter>
+    </ClCompile>
+    <ClCompile Include="finish_kick.cpp">
+      <Filter>Attack\Finish</Filter>
+    </ClCompile>
+    <ClCompile Include="object2d.cpp">
+      <Filter>Obj2d</Filter>
+    </ClCompile>
+    <ClCompile Include="obj_2d_gage.cpp">
+      <Filter>Obj2d</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="light.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="pause.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>Template</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy_minion.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="spwan_wall.cpp">
+      <Filter>Spwan</Filter>
+    </ClCompile>
+    <ClCompile Include="phase_manager.cpp">
+      <Filter>Phase</Filter>
+    </ClCompile>
+    <ClCompile Include="billboard.cpp">
+      <Filter>ObjBillboard</Filter>
+    </ClCompile>
+    <ClCompile Include="billboard_gage.cpp">
+      <Filter>ObjBillboard</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="debugproc.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="fade.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="number.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="objectx_none.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="precompile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skybox.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="sound.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="bg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="coll.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="mgr_coll.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="xinput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="attack.h">
+      <Filter>Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="effect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="particle.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="manager_model.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="manager_texture.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="map_manager.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="map_object_x.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="obj_3d_wall.h">
+      <Filter>Obj3d</Filter>
+    </ClInclude>
+    <ClInclude Include="box_wall.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="box_field.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="object3d.h">
+      <Filter>Obj3d</Filter>
+    </ClInclude>
+    <ClInclude Include="obj_3d_field.h">
+      <Filter>Obj3d</Filter>
+    </ClInclude>
+    <ClInclude Include="helper_sakai.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy_boss.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="motion.h">
+      <Filter>ObjX</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>ObjX</Filter>
+    </ClInclude>
+    <ClInclude Include="object_x.h">
+      <Filter>ObjX</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>ObjX</Filter>
+    </ClInclude>
+    <ClInclude Include="finish_punch.h">
+      <Filter>Attack\Finish</Filter>
+    </ClInclude>
+    <ClInclude Include="finish_kick.h">
+      <Filter>Attack\Finish</Filter>
+    </ClInclude>
+    <ClInclude Include="object2d.h">
+      <Filter>Obj2d</Filter>
+    </ClInclude>
+    <ClInclude Include="obj_2d_gage.h">
+      <Filter>Obj2d</Filter>
+    </ClInclude>
+    <ClInclude Include="manager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="pause.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="template.h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy_minion.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="spwan_wall.h">
+      <Filter>Spwan</Filter>
+    </ClInclude>
+    <ClInclude Include="phase_manager.h">
+      <Filter>Phase</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="billboard.h">
+      <Filter>ObjBillboard</Filter>
+    </ClInclude>
+    <ClInclude Include="billboard_gage.h">
+      <Filter>ObjBillboard</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

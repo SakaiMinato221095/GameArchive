@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>coll.h</FILENAME>
+      <LINE>104</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>関数はスタックの '16460' バイトを使用します: /analyze:stacksize '16384' を超えています。 データの一部をヒープに移動することを考慮してください。</DESCRIPTION>
+    <FUNCTION>CColl::SetData</FUNCTION>
+    <DECORATED>?SetData@CColl@@QAEXUData@1@@Z</DECORATED>
+    <FUNCLINE>104</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>mgr_coll.cpp</FILENAME>
+      <LINE>113</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>関数はスタックの '33012' バイトを使用します: /analyze:stacksize '16384' を超えています。 データの一部をヒープに移動することを考慮してください。</DESCRIPTION>
+    <FUNCTION>CMgrColl::Hit</FUNCTION>
+    <DECORATED>?Hit@CMgrColl@@QAE_NHW4TAG@1@W4EVENT_TYPE@1@@Z</DECORATED>
+    <FUNCLINE>113</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>mgr_coll.cpp</FILENAME>
+      <LINE>113</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CMgrColl::TAG' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CMgrColl::Hit</FUNCTION>
+    <DECORATED>?Hit@CMgrColl@@QAE_NHW4TAG@1@W4EVENT_TYPE@1@@Z</DECORATED>
+    <FUNCLINE>113</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>mgr_coll.cpp</FILENAME>
+      <LINE>113</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CMgrColl::EVENT_TYPE' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CMgrColl::Hit</FUNCTION>
+    <DECORATED>?Hit@CMgrColl@@QAE_NHW4TAG@1@W4EVENT_TYPE@1@@Z</DECORATED>
+    <FUNCLINE>113</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>mgr_coll.cpp</FILENAME>
+      <LINE>190</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>関数はスタックの '33008' バイトを使用します: /analyze:stacksize '16384' を超えています。 データの一部をヒープに移動することを考慮してください。</DESCRIPTION>
+    <FUNCTION>CMgrColl::HitSide</FUNCTION>
+    <DECORATED>?HitSide@CMgrColl@@QAE_NHW4TAG@1@W4EVENT_TYPE@1@W4TYPE_SXIS@1@@Z</DECORATED>
+    <FUNCLINE>190</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\student\Desktop\BattleStreet\BattleStreet\</FILEPATH>
+      <FILENAME>mgr_coll.cpp</FILENAME>
+      <LINE>190</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>列挙型 'CMgrColl::TYPE_SXIS' は対象範囲外です。'enum' (Enum.3) より 'enum class' を優先します。</DESCRIPTION>
+    <FUNCTION>CMgrColl::HitSide</FUNCTION>
+    <DECORATED>?HitSide@CMgrColl@@QAE_NHW4TAG@1@W4EVENT_TYPE@1@W4TYPE_SXIS@1@@Z</DECORATED>
+    <FUNCLINE>190</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
